@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<body>
+    <form>
+        <input type="text" placeholder="Username" id="text1" /><br />
+        <input type="password" placeholder="Password" id="text2" /><br />
+        <input type="button" value="Login"  onclick="javascript:validate()" />
+    </form>
+    <script type="text/javascript">
+    function validate()
+    {
+        if(   document.getElementById("text1").value == "Camtu"
+           && document.getElementById("text2").value == "123" )
+        {
+            alert( "Validation succeeded." );
+        }
+        else
+        {
+            alert( "Invalid Name or Password.");
+        }
+    }
+    </script>
+</body>
+</html>

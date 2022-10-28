@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Hilight Bold Words </title>
+  </head>
+  <body>
+    
+    <h2 onMouseOver="highlight()" onMouseOut="returnNormal()" style="color: red; cursor: pointer">  hovers over a certain link </h2>
+    
+    <p style="font-size: 20px;">
+      Kieu Oanh <strong> de thuong, </strong> Cam Tu <strong> coc can, </strong> Thao Nhu <strong> dep gai </strong>
+    </p>
+    <script type="text/javascript">
+      function highlight() {
+        var hi = document.getElementsByTagName("strong");
+        for (var i = 0; i < hi.length; i++) {
+        hi[i].style.backgroundColor = "red";
+        }
+      }
+      function returnNormal() {
+        var hi = document.getElementsByTagName("strong");
+        for (var i = 0; i < hi.length; i++) {
+        hi[i].style.backgroundColor = "white";
+        }
+      }
+    </script>
+  </body>
+</html>
